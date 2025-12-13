@@ -1,4 +1,45 @@
 .pages {
-    background-color: rgb(21, 255, 0);
-    border: 1px solid red;
+    background-color: #2A2C2F;
+    font-family: 'inter';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    padding: 28px 48px 56px;
+    align-items: center;
+}
+
+.header__logo {
+    width: 176px;
+    height: 52px;
+}
+
+.header__link_lang {
+    color: white;
+    display: flex;
+    gap: 18px;
+    line-height: 28px;
+    font-size: 30px;
+}
+
+.header__link_lang_ru {
+    color: white;
+    text-decoration: underline;
+}
+
+.header__link_lang_ru:hover {
+    color: white;
+    opacity: 0.5;
+}
+
+.header__link_lang_en {
+    color: white;
+    font-weight: 300px;
+}
+
+.header__link_lang_en:hover {
+    color: white;
+    opacity: 0.5;
 }
