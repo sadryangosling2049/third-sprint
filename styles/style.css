@@ -1,6 +1,7 @@
 .pages {
     background-color: #2A2C2F;
     font-family: 'inter';
+    color: white;
 }
 
 .header {
@@ -17,7 +18,6 @@
 }
 
 .header__link_lang {
-    color: white;
     display: flex;
     gap: 18px;
     line-height: 28px;
@@ -25,21 +25,72 @@
 }
 
 .header__link_lang_ru {
-    color: white;
     text-decoration: underline;
+    color: white;
 }
 
 .header__link_lang_ru:hover {
-    color: white;
     opacity: 0.5;
 }
 
 .header__link_lang_en {
-    color: white;
     font-weight: 300px;
 }
 
 .header__link_lang_en:hover {
-    color: white;
     opacity: 0.5;
+}
+
+.lead {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #2A2C2F;
+    padding: auto auto auto 92px;
+}
+
+.lead__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+
+.lead__title {
+    font-size: 96px;
+    line-height: 100px;
+    width: 720px;
+    height: 200px;
+    border: 2px solid red;
+    text-align: center;
+    font-weight: 800;
+    margin: 0 auto;
+}
+
+.lead__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    width: 640px;
+    height: 72px;
+    border: 2px solid red;
+    text-align: center;
+    font-weight: 400;
+    margin: 32px auto 0;
+}
+
+.lead__image {
+    border: 2px solid red;
+    margin: 64px auto 0;
+}
+
+.lead__image-subline {
+    font-size: 10px;
+    line-height: 14px;
+    width: 158px;
+    height: 14px;
+    border: 2px solid red;
+    margin: 8px auto auto 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
