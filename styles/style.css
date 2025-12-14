@@ -94,3 +94,54 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.intro {
+    width: 100%;
+    border: 2px solid blue;
+}
+
+.intro__container {
+    padding: 90px auto 0;
+    border: 2px solid white;
+}
+
+.intro__title {
+    font-size: 54px;
+    line-height: 58px;
+    border: 2px solid red;
+    text-align: start;
+    font-weight: 800;
+    margin: 0 auto 40;
+    min-width: 288px;
+    max-width: 690px;
+}
+
+.intro__main {
+    font-size: 16px;
+    line-height: 1.63;
+    border: 2px solid red;
+    text-align: start;
+    font-weight: normal;
+    margin: 0 auto 33;
+    min-width: 288px;
+    max-width: 690px;
+}
+
+.intro__info {
+    font-size: 12px;
+    line-height: 18px;
+    border: 2px solid red;
+    text-align: start;
+    font-weight: normal;
+    margin: 0 auto 33;
+    min-width: 288px;
+    max-width: 690px;
+}
+
+.intro__info_text {
+    margin: 0
+}
+
+.span {
+    font-weight: bold;
+}
