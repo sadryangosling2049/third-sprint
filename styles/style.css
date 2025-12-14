@@ -44,7 +44,6 @@
 .lead {
     display: flex;
     justify-content: center;
-    width: 100%;
     background-color: #2A2C2F;
     padding: auto auto auto 92px;
 }
@@ -54,14 +53,16 @@
     flex-direction: column;
     align-items: center;
     border: 2px solid red;
-    justify-content: space-between;
+    min-width: 320px;
 }
 
 .lead__title {
     font-size: 96px;
     line-height: 100px;
-    width: 720px;
-    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 288px;
+    min-height: 88px;
     border: 2px solid red;
     text-align: center;
     font-weight: 800;
@@ -71,8 +72,8 @@
 .lead__subtitle {
     font-size: 30px;
     line-height: 36px;
-    width: 640px;
-    height: 72px;
+    max-width: 640px;
+    min-height: 72px;
     border: 2px solid red;
     text-align: center;
     font-weight: 400;
@@ -82,13 +83,14 @@
 .lead__image {
     border: 2px solid red;
     margin: 64px auto 0;
+    max-width: 100%;
 }
 
 .lead__image-subline {
     font-size: 10px;
     line-height: 14px;
-    width: 158px;
-    height: 14px;
+    min-width: min-content;
+    min-height: min-content;
     border: 2px solid red;
     margin: 8px auto auto 0;
     text-transform: uppercase;
@@ -98,11 +100,15 @@
 .intro {
     width: 100%;
     border: 2px solid blue;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .intro__container {
-    padding: 90px auto 0;
+    width: 85%;
     border: 2px solid white;
+    padding-top: 94px;
 }
 
 .intro__title {
@@ -111,7 +117,7 @@
     border: 2px solid red;
     text-align: start;
     font-weight: 800;
-    margin: 0 auto 40;
+    margin: 0 auto;
     min-width: 288px;
     max-width: 690px;
 }
@@ -122,7 +128,7 @@
     border: 2px solid red;
     text-align: start;
     font-weight: normal;
-    margin: 0 auto 33;
+    margin: 40px auto 0;
     min-width: 288px;
     max-width: 690px;
 }
@@ -133,15 +139,36 @@
     border: 2px solid red;
     text-align: start;
     font-weight: normal;
-    margin: 0 auto 33;
+    margin: 33px auto 0;
     min-width: 288px;
     max-width: 690px;
 }
 
 .intro__info_text {
-    margin: 0
+    margin: 0;
 }
 
 .span {
     font-weight: bold;
+}
+
+.gallery {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-top: 92px;
+}
+
+.gallery__container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, max-content));
+    grid-template-rows: auto;
+    border: 2px solid red;
+    gap: 16px;
+}
+
+.gallery__image {
+    border: 2px solid red;
+    width: calc(100%);
 }
