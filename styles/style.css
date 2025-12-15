@@ -160,7 +160,7 @@
 }
 
 .gallery__container {
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(284px, max-content));
     grid-template-rows: auto;
@@ -171,4 +171,94 @@
 .gallery__image {
     border: 2px solid red;
     width: calc(100%);
+}
+
+.places {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.places__container {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid blue;
+    max-width: 100%;
+    gap: 80px;
+    padding-top: 92px;
+}
+
+.places__card {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border: 4px solid yellow;
+}
+
+.places__card_column {
+    flex-direction: column;
+    border: 2px solid red;
+    max-width: calc(82%/2);
+}
+
+
+.places__card_title {
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 800;
+    max-width: 100%;
+    margin-bottom: 48px;
+}
+
+
+.places__card_image {
+    max-width: 100%;
+}
+
+.places__card_url {}
+
+.places__card_url_top {
+    color: #aaa;
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    margin: 106px auto 12px;
+}
+
+.places__card_url_bottom {
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.places__card_url_bottom:hover {
+    opacity: 0.5;
+}
+
+.places__card_desription {
+    font-size: 18px;
+    line-height: 1.63;
+    font-weight: normal;
+    margin: 48px auto 0;
+}
+
+.places__card_desription_text {
+    margin: 0 auto 26px;
+}
+
+@media screen and (max-width: 768px) {
+    .places__card_title {
+        font-size: 42px;
+        line-height: 46px;
+
+        .places__card_desription {
+            font-size: 18px;
+            line-height: 1.63;
+            font-weight: normal;
+            margin: 48px auto 0;
+        }
+    }
 }
