@@ -1,0 +1,8 @@
+.header__link_lang_ru {
+    text-decoration: underline;
+    color: white;
+    height: 100%;
+}
+.header__link_lang_ru:hover {
+    opacity: 0.5;
+}

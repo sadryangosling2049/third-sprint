@@ -1,0 +1,13 @@
+.footer__nav_style {
+    font-size: 16px;
+    line-height: 18px;
+}
+@media screen and (max-width: 767px) {
+    .footer__nav_style {
+            font-size: 24px;
+            line-height: 24px;
+            flex-direction: column;
+            margin-bottom: 48px;
+    
+        }
+}

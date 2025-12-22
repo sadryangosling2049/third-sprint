@@ -1,0 +1,12 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 94px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+    .intro {
+            margin-top: 64px;
+        }
+}

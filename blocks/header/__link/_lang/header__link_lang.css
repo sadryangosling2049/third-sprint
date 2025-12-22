@@ -1,0 +1,15 @@
+.header__link_lang {
+    display: flex;
+    gap: 18px;
+    line-height: 28px;
+    font-size: 30px;
+    font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+    .header__link_lang {
+            display: flex;
+            line-height: 20px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+}

@@ -1,0 +1,10 @@
+.places__card_image {
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .places__card_image {
+            width: calc(100% + 32px);
+            margin-left: -16px;
+            margin-bottom: 32px;
+        }
+}

@@ -1,0 +1,12 @@
+.places__card_url {
+    align-content: flex-end;
+    padding-bottom: 48px;
+}
+@media screen and (max-width: 767px) {
+    .places__card_url {
+            align-content: flex-end;
+            padding-bottom: 32px;
+            max-width: 288px;
+            margin-top: 0;
+        }
+}

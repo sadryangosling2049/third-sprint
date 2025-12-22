@@ -1,0 +1,22 @@
+.places__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    grid-template-rows: 4;
+    column-gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+    .places__container {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(240px, max-content));
+            grid-template-rows: 4;
+            width: 100%;
+            box-sizing: border-box;
+        }
+}
+@media (min-width: 532px) and (max-width: 767px) {
+    .places__container {
+            padding: 0 calc(20%) 0;
+        }
+}

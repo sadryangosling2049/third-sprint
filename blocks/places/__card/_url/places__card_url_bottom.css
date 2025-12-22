@@ -1,0 +1,10 @@
+.places__card_url_bottom {
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+
+}
+.places__card_url_bottom:hover {
+    opacity: 0.5;
+}

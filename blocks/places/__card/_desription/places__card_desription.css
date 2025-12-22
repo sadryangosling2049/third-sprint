@@ -1,0 +1,21 @@
+.places__card_desription {
+    font-size: 18px;
+    line-height: 1.63;
+    font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+    .places__card_desription {
+            font-size: 16px;
+            line-height: 1.63;
+            font-weight: normal;
+    
+        }
+}
+@media screen and (max-width: 767px) {
+    .places__card_desription {
+            font-size: 16px;
+            line-height: 1.63;
+            font-weight: normal;
+            max-width: 288px;
+        }
+}

@@ -1,0 +1,4 @@
+.header__link_lang_en {}
+.header__link_lang_en:hover {
+    opacity: 0.5;
+}

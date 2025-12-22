@@ -1,0 +1,15 @@
+.places {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 92px;
+    width: 100%;
+    gap: 80px;
+}
+@media screen and (max-width: 767px) {
+    .places {
+            margin-top: 50px;
+            gap: 50px;
+        }
+}

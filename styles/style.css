@@ -4,17 +4,24 @@
     color: white;
 }
 
+.pages__content {}
+
 .header {
     display: flex;
-    justify-content: space-between;
-    border: 2px solid red;
     padding: 28px 48px 56px;
-    align-items: center;
+}
+
+.header__container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .header__logo {
     width: 176px;
     height: 52px;
+
 }
 
 .header__link_lang {
@@ -22,20 +29,20 @@
     gap: 18px;
     line-height: 28px;
     font-size: 30px;
+    font-weight: 300;
 }
 
 .header__link_lang_ru {
     text-decoration: underline;
     color: white;
+    height: 100%;
 }
 
 .header__link_lang_ru:hover {
     opacity: 0.5;
 }
 
-.header__link_lang_en {
-    font-weight: 300px;
-}
+.header__link_lang_en {}
 
 .header__link_lang_en:hover {
     opacity: 0.5;
@@ -45,25 +52,24 @@
     display: flex;
     justify-content: center;
     background-color: #2A2C2F;
-    padding: auto auto auto 92px;
+
 }
 
 .lead__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid red;
-    min-width: 320px;
+    box-sizing: border-box;
+
 }
 
 .lead__title {
     font-size: 96px;
     line-height: 100px;
-    max-width: 100%;
     max-height: 100%;
     min-width: 288px;
+    max-width: 720px;
     min-height: 88px;
-    border: 2px solid red;
     text-align: center;
     font-weight: 800;
     margin: 0 auto;
@@ -74,79 +80,74 @@
     line-height: 36px;
     max-width: 640px;
     min-height: 72px;
-    border: 2px solid red;
     text-align: center;
     font-weight: 400;
     margin: 32px auto 0;
 }
 
-.lead__image {
-    border: 2px solid red;
-    margin: 64px auto 0;
-    max-width: 100%;
+.lead__image_picture {
+    margin-top: 64px;
+    width: 100%;
 }
 
-.lead__image-subline {
+.lead__image_subline {
     font-size: 10px;
     line-height: 14px;
-    min-width: min-content;
-    min-height: min-content;
-    border: 2px solid red;
     margin: 8px auto auto 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    font-weight: 300;
 }
 
 .intro {
-    width: 100%;
-    border: 2px solid blue;
+    display: flex;
     justify-content: center;
-    justify-items: center;
     align-items: center;
+    margin-top: 94px;
+    box-sizing: border-box;
 }
 
 .intro__container {
-    width: 85%;
-    border: 2px solid white;
-    padding-top: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 100%;
 }
 
 .intro__title {
     font-size: 54px;
     line-height: 58px;
-    border: 2px solid red;
     text-align: start;
     font-weight: 800;
-    margin: 0 auto;
-    min-width: 288px;
-    max-width: 690px;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 720px;
 }
 
 .intro__main {
     font-size: 16px;
     line-height: 1.63;
-    border: 2px solid red;
     text-align: start;
     font-weight: normal;
-    margin: 40px auto 0;
-    min-width: 288px;
-    max-width: 690px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    max-width: 720px;
 }
 
 .intro__info {
     font-size: 12px;
     line-height: 18px;
-    border: 2px solid red;
     text-align: start;
-    font-weight: normal;
-    margin: 33px auto 0;
-    min-width: 288px;
-    max-width: 690px;
+    margin-top: 33px;
+    margin-bottom: 0;
+    max-width: 720px;
 }
 
 .intro__info_text {
     margin: 0;
 }
+
+
 
 .span {
     font-weight: bold;
@@ -162,61 +163,56 @@
 .gallery__container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(284px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
     grid-template-rows: auto;
-    border: 2px solid red;
     gap: 16px;
+    margin: 0 auto;
+    padding: 0 44px;
+    box-sizing: border-box;
+    justify-content: center;
+
 }
 
 .gallery__image {
-    border: 2px solid red;
     width: calc(100%);
 }
 
 .places {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-top: 92px;
+    width: 100%;
+    gap: 80px;
 }
 
 .places__container {
-    display: flex;
-    flex-direction: column;
-    border: 4px solid blue;
-    max-width: 100%;
-    gap: 80px;
-    padding-top: 92px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    grid-template-rows: 4;
+    column-gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-.places__card {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    border: 4px solid yellow;
-}
-
-.places__card_column {
-    flex-direction: column;
-    border: 2px solid red;
-    max-width: calc(82%/2);
-}
-
 
 .places__card_title {
     font-size: 72px;
     line-height: 76px;
     font-weight: 800;
-    max-width: 100%;
+    max-width: 550px;
     margin-bottom: 48px;
 }
 
-
 .places__card_image {
-    max-width: 100%;
+    width: 100%;
 }
 
-.places__card_url {}
+
+.places__card_url {
+    align-content: flex-end;
+    padding-bottom: 48px;
+}
 
 .places__card_url_top {
     color: #aaa;
@@ -224,7 +220,6 @@
     font-size: 12px;
     line-height: 12px;
     font-weight: normal;
-    margin: 106px auto 12px;
 }
 
 .places__card_url_bottom {
@@ -232,6 +227,7 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: normal;
+
 }
 
 .places__card_url_bottom:hover {
@@ -242,62 +238,63 @@
     font-size: 18px;
     line-height: 1.63;
     font-weight: normal;
-    margin: 48px auto 0;
 }
 
-.places__card_desription_text {
-    margin: 0 auto 26px;
+.places__card_desription_text-1 {
+    margin: 0 auto 0;
+}
+
+.places__card_desription_text-2 {
+    margin: 25 auto 0;
 }
 
 .cover {
-    width: 100%;
-}
-
-.cover__container {
-    border: 2px solid blue;
-    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 92px;
+    max-width: 100%;
+}
+
+
+.cover__container {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    max-height: fit-content;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .cover__background_image {
-    max-width: 100vw;
-    min-width: 100%;
-    max-height: 100vh;
     position: relative;
-    z-index: 0;
-}
-
-@media screen and (min-width: 1280px) {
-    .cover__background_image {
-        max-width: 100%;
-        min-width: 10%;
-    }
-}
-
-.cover__background_image_overlay {
-    position: relative;
-    background-color: #2A2C2F;
-    z-index: 2;
-    opacity: 0.5;
+    z-index: 1;
+    object-fit: cover;
+    max-width: calc(100% - 88px);
+    margin-left: 44px;
+    box-sizing: border-box;
 }
 
 .cover__background_title {
-    border: 2px solid yellow;
+    color: white;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-width: 100%;
-    min-height: 100%;
-    max-height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
+    left: 0;
     gap: 32px;
     z-index: 3;
+    background-color: rgba(42, 44, 47, 0.3);
 }
+
+.cover__background_title:hover {
+    background-color: rgba(42, 44, 47, 0.8);
+}
+
 
 .title {}
 
@@ -306,7 +303,6 @@
     line-height: 76px;
     font-weight: 800;
     max-width: 560px;
-    border: 2px solid red;
     margin: 0px;
 }
 
@@ -315,31 +311,15 @@
     line-height: 22px;
     font-weight: normal;
     max-width: 360px;
-    border: 2px solid red;
     margin: 0;
-}
-
-
-@media screen and (max-width: 768px) {
-    .places__card_title {
-        font-size: 42px;
-        line-height: 46px;
-
-        .places__card_desription {
-            font-size: 18px;
-            line-height: 1.63;
-            font-weight: normal;
-            margin: 48px auto 0;
-        }
-    }
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 92px;
-
+    margin-top: 80px;
+    padding: 24px 48px;
 }
 
 .footer__nav {
@@ -367,15 +347,240 @@
     line-height: 16px;
 }
 
-@media screen and (max-width: 600px) {
+.container__position {
+    padding: 0 148px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+    .container__position {
+        padding: 0 48px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cover__background_image {
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+        max-width: calc(100%);
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 24px 24px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 28px 24px 48px;
+        align-items: center;
+    }
+
+    .lead__image_picture {
+        margin-top: 56px;
+        width: calc(100% + 48px);
+        margin-left: -24px;
+    }
+
+    .gallery__container {
+        gap: 16px;
+        padding: 0 24px;
+    }
+
+    .places__card_title {
+        font-size: 42px;
+        line-height: 46px;
+        max-width: 320px;
+        margin-bottom: 48px;
+
+    }
+
+    .places__card_desription {
+        font-size: 16px;
+        line-height: 1.63;
+        font-weight: normal;
+
+    }
+
+    .places__card_title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .container__position {
+        padding: 0 24px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .container__position {
+        box-sizing: border-box;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px 48px;
+    }
+
+    .header__container {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header__logo {
+        width: 142px;
+        height: 42px;
+    }
+
+    .header__link_lang {
+        display: flex;
+        line-height: 20px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .lead__title {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .lead__image_picture {
+        width: calc(100% + 32px);
+        margin-top: 40px;
+        margin-left: -16px;
+    }
+
+
+    .lead__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 640px;
+        min-height: 40px;
+        text-align: center;
+        font-weight: 400;
+        margin: 32px auto 0;
+    }
+
+    .intro {
+        margin-top: 64px;
+    }
+
+    .intro__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+
+    .gallery__container {
+        gap: 12px;
+
+
+    }
+
+    .places {
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .places__container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(240px, max-content));
+        grid-template-rows: 4;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .places__card_title {
+        font-size: 32px;
+        line-height: 35px;
+        font-weight: 800;
+        max-width: 288px;
+        margin-bottom: 32px;
+
+    }
+
+    .places__card_url {
+        align-content: flex-end;
+        padding-bottom: 32px;
+        max-width: 288px;
+        margin-top: 0;
+    }
+
+    .places__card_image {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        margin-bottom: 32px;
+    }
+
+    .places__card_desription {
+        font-size: 16px;
+        line-height: 1.63;
+        font-weight: normal;
+        max-width: 288px;
+    }
+
+    .cover__background_title {
+        gap: 16px;
+    }
+
+    .cover__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 250px;
+    }
+
+    .cover__subtitle {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+        max-width: 265px;
+        margin: 0;
+    }
+
     .footer {
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 64px;
+        padding: 0 16px 0;
     }
 
+
     .footer__nav {
+        gap: 32px;
+    }
+
+    .footer__nav_style {
+        font-size: 24px;
+        line-height: 24px;
         flex-direction: column;
         margin-bottom: 48px;
+
     }
+
+    .footer__author_style {
+        font-size: 14px;
+        line-height: 14px;
+
+    }
+}
+
+@media (min-width: 532px) and (max-width: 767px) {
+    .places__container {
+        padding: 0 calc(20%) 0;
+    }
+
 }
